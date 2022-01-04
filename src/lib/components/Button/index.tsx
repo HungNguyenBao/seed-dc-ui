@@ -19,10 +19,10 @@ const Button = ({
   postfixIcon,
 }: ButtonProps) => {
   return (
-    <div className="sc-button__container">
-      {prefixIcon && <img src={prefixIcon} className="prefix-icon" />}
+    <div className={`sc-button__container ${size} ${kind} ${type}`}>
+      {prefixIcon && <img src={prefixIcon} className={`prefix-icon ${size}`} />}
       <span>{label}</span>
-      {postfixIcon && <img src={postfixIcon} className="postfix-icon" />}
+      {postfixIcon && <img src={postfixIcon} className={`postfix-icon ${size}`} />}
     </div>
   );
 };

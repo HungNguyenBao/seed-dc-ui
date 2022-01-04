@@ -1,4 +1,107 @@
 .sc-button__container {
   display: flex;
   align-items: center;
+  font-weight: 600;
+  border-radius: 4px;
+  &.s {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px;
+  }
+  &.m {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+  }
+  &.l {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+  &.light {
+    &.primary {
+      color: #3280f6;
+    }
+    &.secondary {
+      color: #4a5568;
+    }
+    &.destructive {
+      color: #e53e3e;
+    }
+    &:hover {
+      cursor: pointer;
+      .primary {
+        background-color: #e6f1ff;
+        color: #3280f6;
+      }
+      .secondary {
+        color: #4a5568;
+      }
+      .destructive {
+        color: #c53030;
+        background-color: #fff5f5;
+      }
+    }
+  }
+  &.strong {
+    color: white;
+    &.primary {
+      background-color: #3180f6;
+    }
+    &.secondary {
+      border: 1px solid #cbd5e0;
+      color: #4a5568;
+    }
+    &.destructive {
+      background-color: #e53e3e;
+    }
+    &:hover {
+      cursor: pointer;
+      .primary {
+        background-color: #2567cc;
+      }
+      .secondary {
+        background-color: #f8fafc;
+      }
+      .destructive {
+        background-color: #c53030;
+      }
+    }
+  }
+  .postfix-icon {
+    object-fit: contain;
+    &.s {
+      width: 10px;
+      height: 10px;
+      margin-left: 7px;
+    }
+    &.m {
+      width: 12px;
+      height: 12px;
+      margin-left: 8px;
+    }
+    &.l {
+      width: 10px;
+      height: 10px;
+      margin-left: 9px;
+    }
+  }
+  .prefix-icon {
+    object-fit: contain;
+    &.s {
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+    }
+    &.m {
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+    }
+    &.l {
+      width: 10px;
+      height: 10px;
+      margin-right: 9px;
+    }
+  }
 }

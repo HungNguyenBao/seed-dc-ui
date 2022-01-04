@@ -1,7 +1,25 @@
 {
-  "name": "seed-dc-ui",
+  "name": "seed-ds-ui",
+  "description": "Seedcom library UI",
+  "author": "HungNguyen",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "seedcom"
+  ],
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HungNguyenBao/seed-ds-ui.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.1",
