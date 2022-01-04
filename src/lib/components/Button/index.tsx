@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/button.scss";
 
 type ButtonProps = {
-  size: "s" | "m" | "l";
-  kind: "strong" | "light";
-  type: "primary" | "secondary" | "destructive";
+  size?: "s" | "m" | "l";
+  kind?: "strong" | "light";
+  type?: "primary" | "secondary" | "destructive";
   label: string;
   prefixIcon?: any;
   postfixIcon?: any;
@@ -20,9 +20,9 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <div className={`sc-button__container ${size} ${kind} ${type}`}>
-      {prefixIcon && <img src={prefixIcon} className={`prefix-icon ${size}`} />}
+      {prefixIcon && <img src={prefixIcon} className={`prefix-icon ${size}`} alt="" />}
       <span>{label}</span>
-      {postfixIcon && <img src={postfixIcon} className={`postfix-icon ${size}`} />}
+      {postfixIcon && <img src={postfixIcon} className={`postfix-icon ${size}`} alt="" />}
     </div>
   );
 };
