@@ -1,3 +1,16 @@
+.normal-button {
+  cursor: pointer;
+  transition: background 0.8s;
+  -webkit-tap-highlight-color: transparent;
+}
+.normal-button:hover {
+  opacity: 0.8;
+}
+
+i {
+  user-select: none;
+}
+
 input {
   background-color: transparent;
   border: none;
@@ -203,6 +216,27 @@ textarea {
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+}
+
+.sc-pagination__container {
+  display: flex;
+  align-items: "center";
+  .page-item {
+    padding: 6px 12px;
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .selected {
+    color: #3280f6;
+  }
+  .page-icon {
+    color: #4a5568;
+    &.disabled {
+      color: #cbd5e0;
     }
   }
 }
