@@ -1,14 +1,22 @@
 import React from "react";
 
-const Button = (props) => {
-  const {
-    size = "s",
-    kind = "strong",
-    type = "primary",
-    label,
-    prefixIcon,
-    postfixIcon,
-  } = props;
+type ButtonProps = {
+  size: "s" | "m" | "l";
+  kind: "strong" | "light";
+  type: "primary" | "secondary" | "destructive";
+  prefixIcon?: any;
+  postfixIcon?: any;
+  label: string;
+};
+
+const Button = ({
+  size = "s",
+  kind = "strong",
+  type = "primary",
+  label,
+  prefixIcon,
+  postfixIcon,
+}: ButtonProps) => {
   return (
     <div className={`sc-button__container ${size} ${kind} ${type}`}>
       {prefixIcon && (
