@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./lib/components/styles/index.scss";
-import { Input, Pagination } from "./lib";
+import { Input, Pagination, CheckBox } from "./lib";
 
 function App() {
   return (
@@ -16,6 +15,7 @@ function App() {
           inputType="password"
         />
         <Pagination totalPage={10} />
+        <CheckBox />
       </header>
     </div>
   );

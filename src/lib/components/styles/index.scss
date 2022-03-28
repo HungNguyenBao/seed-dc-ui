@@ -240,3 +240,48 @@ textarea {
     }
   }
 }
+
+.check-box__container {
+  display: flex;
+  align-items: center;
+  .input-m {
+    width: 15px;
+    height: 15px;
+  }
+  .input-l {
+    width: 18px;
+    height: 18px;
+  }
+  .icon-m {
+    font-size: 18px;
+  }
+  .icon-l {
+    font-size: 20px;
+  }
+  .label-m {
+    user-select: none;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 7px;
+    color: #2d3748;
+  }
+  .label-l {
+    user-select: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 12px;
+    color: #2d3748;
+  }
+  .indeterminate {
+    color: #3280f6;
+  }
+  .checked {
+    color: #3280f6;
+  }
+  .unchecked {
+    color: #4a5568;
+  }
+  .disabled {
+    color: #cbd5e0;
+  }
+}

@@ -36,10 +36,12 @@ const Pagination = ({
     const isSelected = currentPage === page;
 
     return (
-      <div className={`normal-button page-item ${isSelected && "selected"}`}>
-        <span key={page} onClick={onChange(page)}>
-          {page === -1 ? "..." : page}
-        </span>
+      <div
+        className={`normal-button page-item ${isSelected && "selected"}`}
+        onClick={onChange(page)}
+        key={page}
+      >
+        <span>{page === -1 ? "..." : page}</span>
       </div>
     );
   };
