@@ -1,6 +1,6 @@
 import "./App.css";
 import "./lib/components/styles/index.scss";
-import { Input, Pagination, CheckBox } from "./lib";
+import { Input, Pagination, CheckBox, Select } from "./lib";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         />
         <Pagination totalPage={10} />
         <CheckBox />
+        <Select label="Label 1" supportive="supportive 1" />
       </header>
     </div>
   );
