@@ -327,6 +327,12 @@ textarea {
     &.isFocus {
       border-color: #3280f6;
     }
+    .input-multiple {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      min-width: 200px;
+    }
     .input {
       flex: 1;
       color: #2d3748;
@@ -334,6 +340,23 @@ textarea {
       &::placeholder {
         color: #718096;
       }
+    }
+    .tag-item {
+      font-size: 12px;
+      line-height: 16px;
+      color: #2567cc;
+      margin-right: 8px;
+      padding: 2px 8px 2px 12px;
+      border-radius: 100px;
+      border: 1px solid #93c2ff;
+      display: flex;
+      align-items: center;
+    }
+    .close-tag-icon {
+      font-size: 13px;
+      color: #2567cc;
+      margin-top: 1px;
+      margin-left: 4px;
     }
   }
   .supportive {
@@ -353,6 +376,7 @@ textarea {
     z-index: 2;
     margin-top: 4px;
     border-radius: 4px;
+    padding: 8px 0;
     .empty {
       align-self: center;
       color: #718096;
@@ -362,7 +386,23 @@ textarea {
   }
 
   .selection-color {
-    box-shadow: 0 2px 8px 0 #1719231f;
+    box-shadow: 0 4px 16px 0 #1719231f;
     background-color: #ffffff;
+  }
+
+  .select-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2d3748;
+    &:hover {
+      background-color: #f8fafc;
+    }
+    .check-box__container {
+      margin-right: 7px;
+    }
   }
 }

@@ -6,14 +6,18 @@ type CheckBoxProps = {
   indeterminate?: boolean;
   disabled?: boolean;
   onChange?: (checked: boolean) => void;
+  readOnly?: boolean;
+  label?: string;
 };
 
 const CheckBox = ({
   size = "m",
   checked,
   indeterminate,
-  disabled,
+  disabled = false,
   onChange,
+  readOnly,
+  label,
 }: CheckBoxProps) => {
   const [isChecked, setChecked] = useState(!!checked);
   const [isIndeterminate, setIndeterminate] = useState(!!indeterminate);
@@ -30,7 +34,7 @@ const CheckBox = ({
     <div
       className={`check-box__container ${!disabled && "normal-button"}`}
       onClick={() => {
-        if (disabled) return;
+        if (disabled || readOnly) return;
         setIndeterminate(false);
         onChange?.(!isChecked);
         setChecked(!isChecked);
@@ -61,7 +65,7 @@ const CheckBox = ({
           check_box_outline_blank
         </i>
       )}
-      <span className={`label-${size}`}>Label 123</span>
+      {!!label && <span className={`label-${size}`}>{label}</span>}
     </div>
   );
 };
